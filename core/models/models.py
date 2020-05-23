@@ -18,7 +18,5 @@ RequestToken = namedtuple(
 )
 
 RequestAuth = namedtuple(
-    "RequestAuth",
-    ["oauth_token", "oauth_token_secret", "user_id", "screen_name", "x_auth_expires",],
+    "RequestAuth", ["oauth_token", "oauth_token_secret", "user_id", "screen_name"],
 )
-
