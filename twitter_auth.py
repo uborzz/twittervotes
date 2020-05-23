@@ -41,7 +41,6 @@ def home():
 
 @app.route("/callback")
 def callback():
-    print("callback")
     global req_token
     global consumer
 
@@ -52,7 +51,7 @@ def callback():
     token.set_verifier(oauth_verifier)
 
     client = oauth.Client(consumer, token)
-    resp, content = client.request(config.access_token_url, "POST")
+    _, content = client.request(config.access_token_url, "POST")
     access_token = dict(parse_qsl(content.decode("utf-8")))
 
     with open(".twitterauth", "w") as req_auth:
