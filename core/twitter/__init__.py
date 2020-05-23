@@ -1,1 +1,1 @@
-from .hashtag import HashTag
+from .hashtag import Hashtag

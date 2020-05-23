@@ -1,4 +1,4 @@
-class HashTag:
+class Hashtag:
     def __init__(self, name):
         self.name = name
         self.total = 0

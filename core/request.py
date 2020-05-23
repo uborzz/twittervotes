@@ -7,7 +7,7 @@ import requests
 
 from .config import read_config, read_reqauth
 
-from .twitter import HashTag
+from .twitter import Hashtag
 
 
 def prepare_request(url, url_params):
@@ -35,7 +35,7 @@ def prepare_request(url, url_params):
     return req.to_url()
 
 
-def execute_request(hashtag: HashTag):
+def execute_request(hashtag: Hashtag):
     config = read_config()
 
     if hashtag.refresh_url:
