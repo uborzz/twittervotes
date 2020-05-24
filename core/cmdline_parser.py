@@ -40,6 +40,4 @@ def parse_commandline_args():
     )
 
     args = argparser.parse_args()
-    print("AAAAARGS")
-    print(args)
     return validated_args(args)
