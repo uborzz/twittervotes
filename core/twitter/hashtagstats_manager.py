@@ -17,10 +17,8 @@ class HashtagStatsManager:
         statuses = results.get("statuses")
 
         total = len(statuses)
-        print("TOTAL", total)
 
         if total > 0:
-            print("updating")
             self._hashtags.get(hashtag.name).total += total
             self._hashtags.get(hashtag.name).refresh_url = refresh_url
 
